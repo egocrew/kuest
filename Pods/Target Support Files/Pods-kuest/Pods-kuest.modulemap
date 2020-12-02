@@ -1,0 +1,6 @@
+framework module Pods_kuest {
+  umbrella header "Pods-kuest-umbrella.h"
+
+  export *
+  module * { export * }
+}
