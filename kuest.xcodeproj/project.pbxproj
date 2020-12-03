@@ -204,6 +204,7 @@
 				8B5EBFFE25784552009F4CF9 /* Frameworks */,
 				8B5EBFFF25784552009F4CF9 /* Resources */,
 				C9F9DA2B04D301F579D9FB59 /* [CP] Embed Pods Frameworks */,
+				F761B526C9C75CC8BED27E0F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +243,7 @@
 				8B5EC01A25784553009F4CF9 /* Frameworks */,
 				8B5EC01B25784553009F4CF9 /* Resources */,
 				79420B7C987C812C51D1D09B /* [CP] Embed Pods Frameworks */,
+				D044E15F25EBFF45F9C9BF52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -420,6 +422,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kuest/Pods-kuest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D044E15F25EBFF45F9C9BF52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kuest-kuestUITests/Pods-kuest-kuestUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kuest-kuestUITests/Pods-kuest-kuestUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kuest-kuestUITests/Pods-kuest-kuestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F761B526C9C75CC8BED27E0F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kuest/Pods-kuest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kuest/Pods-kuest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kuest/Pods-kuest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

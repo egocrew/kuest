@@ -11,6 +11,10 @@ target 'kuest' do
   pod 'KakaoSDKAuth' 
   pod 'KakaoSDKUser' 
 
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+
   target 'kuestTests' do
     inherit! :search_paths
     # Pods for testing
