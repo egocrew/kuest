@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var view: ViewFlag = viewFlag
+    
+    @ViewBuilder
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+//        Group {
+//            if view.sign {
+//                MainView(view:view)
+//            }else{
+                SignView(view:view)
+//            }
+//        }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
