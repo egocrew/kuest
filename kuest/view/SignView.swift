@@ -13,20 +13,20 @@ struct SignView: View {
     
     var body: some View {
         ZStack{
-            Image("bg.sign")
-                .resizable()
-                .edgesIgnoringSafeArea(.vertical)
-                .scaledToFill()
-            Rectangle()
-                .fill(Color.black)
-                .edgesIgnoringSafeArea(.vertical)
-                .scaledToFit()
-                .opacity(0.8)
+//            Image(systemName: "person")
+//                .resizable()
+//                .edgesIgnoringSafeArea(.vertical)
+//                .scaledToFill()
+//            Rectangle()
+//                .fill(Color.black)
+//                .edgesIgnoringSafeArea(.vertical)
+//                .scaledToFit()
+//                .opacity(0.8)
             VStack(spacing:0){
                 Spacer()
                 
                 //서비스 이름
-                Text("Time Again")
+                Text("Kuest")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                 Text("for egoist Crew")
@@ -40,20 +40,19 @@ struct SignView: View {
                 // 로그인 버튼 3개
                 HStack{
 //                    // 구글 로그인
-//                    ZStack{
-//                        Circle()
-//                            .fill(Color.white)
-//                            .frame(width: 60, height: 60)
-//                        Image("social.google.black")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 20, height: 20)
-//                    }.onTapGesture {
-//                        SocialSign().signIn(platform: "google")
-//                        loading.toggle()
-//                    }.disabled(loading)
-//                    .padding()
-//
+                    ZStack{
+                        Circle()
+                            .fill(Color.white)
+                            .frame(width: 60, height: 60)
+                        Image(systemName: "person")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 20, height: 20)
+                    }.onTapGesture {
+                        SocialSign().signIn(platform: "google")
+                        loading.toggle()
+                    }.disabled(loading)
+                    .padding()
                     
                     
                     // 카카오 로그인
@@ -70,20 +69,6 @@ struct SignView: View {
                     }.disabled(loading)
                     .padding()
                     
-//                    // 애플 로그인
-//                    ZStack{
-//                        Circle()
-//                            .fill(Color.white)
-//                            .frame(width: 60, height: 60)
-//                        Image("social.apple.black")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fit)
-//                            .frame(width: 20, height: 20)
-//                    }.onTapGesture {
-//                        SocialSign().signIn(platform: "google")
-//                        loading.toggle()
-//                    }.disabled(loading)
-//                    .padding()
                     
                 }.scaledToFit()
                 

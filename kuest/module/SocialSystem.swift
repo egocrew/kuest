@@ -9,6 +9,9 @@ import Foundation
 import KakaoSDKAuth
 import KakaoSDKCommon
 import KakaoSDKUser
+import Firebase
+import GoogleSignIn
+
 var viewFlag : ViewFlag = ViewFlag()
 
 class ViewFlag : ObservableObject{
@@ -45,7 +48,7 @@ class SignStruct{
 class SocialSign{
     
     func signIn(platform: String) {
-//        if platform == "kakao"{
+        if platform == "kakao"{
             AuthApi.shared.loginWithKakaoAccount {(oauthToken, error) in
                 if let error = error {
                     print(error)
@@ -65,14 +68,14 @@ class SocialSign{
                     }
                 }
             }
-//        } else if platform == "google" {
-//            GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.first?.rootViewController
-//            GIDSignIn.sharedInstance()?.signIn()
-//        }
+        } else if platform == "google" {
+            GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.first?.rootViewController
+            GIDSignIn.sharedInstance()?.signIn()
+        }
     }
     
     func signOut() {
-//        if signTemp.get().platform == "kakao" {
+        if signTemp.get().platform == "kakao" {
             UserApi.shared.logout {(error) in
                 if let error = error {
                     print(error)
@@ -82,15 +85,15 @@ class SocialSign{
                     signTemp.set(platform:"",id:"")
                 }
             }
-//        } else if signTemp.platform == "google" {
-//            let firebaseAuth = Auth.auth()
-//            do {
-//                try firebaseAuth.signOut()
-//                signTemp.set(platform:"",id:"")
-//            } catch let signOutError as NSError {
-//                print ("Error signing out: %@", signOutError)
-//            }
-//        }
+        } else if signTemp.platform == "google" {
+            let firebaseAuth = Auth.auth()
+            do {
+                try firebaseAuth.signOut()
+                signTemp.set(platform:"",id:"")
+            } catch let signOutError as NSError {
+                print ("Error signing out: %@", signOutError)
+            }
+        }
     }
     
 }

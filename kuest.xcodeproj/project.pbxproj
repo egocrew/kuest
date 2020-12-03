@@ -18,6 +18,7 @@
 		8B5EC02225784553009F4CF9 /* kuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EC02125784553009F4CF9 /* kuestUITests.swift */; };
 		8B5EC04A25785DE6009F4CF9 /* SocialSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EC04925785DE6009F4CF9 /* SocialSystem.swift */; };
 		8B5EC05D25785F1F009F4CF9 /* SignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EC05C25785F1F009F4CF9 /* SignView.swift */; };
+		8B5EC09B25786D1D009F4CF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B5EC09A25786D1D009F4CF9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		8B5EC02325784553009F4CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B5EC04925785DE6009F4CF9 /* SocialSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSystem.swift; sourceTree = "<group>"; };
 		8B5EC05C25785F1F009F4CF9 /* SignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignView.swift; sourceTree = "<group>"; };
+		8B5EC09A25786D1D009F4CF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		94B31ADBF785E74CAD874B9E /* Pods-kuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuest.debug.xcconfig"; path = "Target Support Files/Pods-kuest/Pods-kuest.debug.xcconfig"; sourceTree = "<group>"; };
 		BB55070A8D7691D80DBDD64B /* Pods-kuest-kuestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kuest-kuestUITests.debug.xcconfig"; path = "Target Support Files/Pods-kuest-kuestUITests/Pods-kuest-kuestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDE27F9D1F2E38D3461E2E06 /* Pods_kuest_kuestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kuest_kuestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 		8B5EC00325784552009F4CF9 /* kuest */ = {
 			isa = PBXGroup;
 			children = (
+				8B5EC09A25786D1D009F4CF9 /* GoogleService-Info.plist */,
 				8B5EC05B25785F0C009F4CF9 /* view */,
 				8B5EC04825785DCD009F4CF9 /* module */,
 				8B5EC00425784552009F4CF9 /* kuestApp.swift */,
@@ -304,6 +307,7 @@
 			files = (
 				8B5EC00C25784553009F4CF9 /* Preview Assets.xcassets in Resources */,
 				8B5EC00925784553009F4CF9 /* Assets.xcassets in Resources */,
+				8B5EC09B25786D1D009F4CF9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
